@@ -1,0 +1,80 @@
+/* Reset css */
+     *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+     }
+
+     body 
+     {
+         /*thiết lập font chữ   */
+         font-family:'Times New Roman', Times, serif;
+         /* Thiết lập khung nhìn theo thiết bị theo chiều cao  */
+         height: 100vh;
+         background-image: linear-gradient( to right, #4daf54, #3d8880);
+         /* Khi chiều cao của body không đủ chứa text, thì text bị tràn sẽ được dấu đi */
+         overflow:scroll;
+
+     }
+
+     .card{
+         height:400px ;
+         width: 320px;
+         background-color: #272d40;
+         /* Set margin top,bottom 120px left,right */
+         margin:120px auto;
+         padding: 20px 20px;
+         border-radius: 15px;
+         position: relative;
+         color: white;
+     }
+     .card__heart,.card__cart
+     {
+         position: absolute;
+         display: flex;
+         left: 15px;
+     }
+
+     .card__heart{
+         
+         
+     }
+     .card__cart 
+     {
+         left: unset;
+         right: 15px;
+     }
+     .card__image
+     {
+         width: 90%;
+
+     }
+     .card__image img{
+         width: 100%;
+         height: 100%;
+         /* object-fit: Để  lấy toàn ảnh mà không bị bể ảnh  */
+         object-fit: cover;
+         object-position: center;
+         
+     }
+     .card__titile{
+         
+     }
+     .card__size{
+         
+     }
+     .card__color{
+         
+     }
+     .card_button{
+         
+     }
+ 
+     
+
+     /* img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    } */
